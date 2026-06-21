@@ -1,3 +1,102 @@
-<html>
-TEST3
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ηλεκτρολόγος Μηχανικός | Coming Soon</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: radial-gradient(circle, #101827 0%, #05070a 100%);
+            color: #ffffff;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .container {
+            padding: 20px;
+            max-width: 600px;
+        }
+
+        /* Το όνομά σου */
+        .name {
+            font-size: 1.5rem;
+            color: #a0aec0;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-bottom: 10px;
+        }
+
+        /* Ορθογραφημένος τίτλος */
+        h1 {
+            font-size: 3rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 40px;
+            color: #ffffff;
+            font-weight: 700;
+        }
+
+        /* Το Coming Soon που αναβοσβήνει */
+        .coming-soon {
+            font-size: 1.4rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            color: #00d4ff;
+            border: 2px solid #00d4ff;
+            padding: 15px 30px;
+            display: inline-block;
+            border-radius: 5px;
+            box-shadow: 0 0 15px rgba(0, 212, 255, 0.2);
+            /* Εδώ μπαίνει το animation για το αναβόσβημα */
+            animation: blinker 1.5s linear infinite;
+        }
+
+        .footer {
+            margin-top: 60px;
+            font-size: 0.9rem;
+            color: #4a5568;
+        }
+
+        /* Animation για το εφέ αναβοσβήματος (Blink) */
+        @keyframes blinker {
+            0% { opacity: 1.0; box-shadow: 0 0 15px rgba(0, 212, 255, 0.4); }
+            50% { opacity: 0.1; box-shadow: 0 0 0px rgba(0, 212, 255, 0); }
+            100% { opacity: 1.0; box-shadow: 0 0 15px rgba(0, 212, 255, 0.4); }
+        }
+
+        /* Responsive για κινητά */
+        @media (max-width: 480px) {
+            h1 { font-size: 2rem; }
+            .name { font-size: 1.1rem; }
+            .coming-soon { font-size: 1.1rem; padding: 10px 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="name">ΙΩΑΝΝΗΣ ΠΑΠΑΔΟΠΟΥΛΟΣ</div>
+        
+        <h1>Ηλεκτρολόγος Μηχανικός</h1>
+        
+        <div class="coming-soon">Coming Soon</div>
+        
+        <div class="footer">
+            <p>&copy; 2026 Όλα τα δικαιώματα διατηρούνται.</p>
+        </div>
+    </div>
+
+</body>
 </html>
